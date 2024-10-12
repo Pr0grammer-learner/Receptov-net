@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- Верхний розовый блок -->
+    <View
+        android:id="@+id/top_pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/pinkColor" />
+
+    <!-- Центрирование логотипа, названия и кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="538dp"
+        android:layout_centerInParent="true"
+        android:background="@color/backgroundColor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Логотип -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
+
+        <!-- Название приложения -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/jersey10"
+            android:text="Receptov.NET"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <!-- Кнопка "Enter" -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enter_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/jersey10"
+            android:text="Enter"
+            android:textColor="@color/primaryTextColor"
+            android:textColorLink="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Кнопка "Recipe" -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recipe_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/jersey10"
+            android:text="Recipe"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Нижний розовый блок -->
+    <View
+        android:id="@+id/bottom_pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pinkColor" />
+</RelativeLayout>

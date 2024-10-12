@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="lightGray">#F5F5F5</color>
+    <color name="buttonColor">#4CAF50</color> <!-- Зеленый цвет -->
+    <color name="white">#FFFFFF</color>
+    <color name="primaryTextColor">#000000</color> <!-- Чёрный цвет текста -->
+    <color name="backgroundColor">#DDE6E8</color> <!-- Светло-серый фон -->
+    <color name="pinkColor">#F2CEF0</color> <!-- Розовый цвет -->
+</resources>

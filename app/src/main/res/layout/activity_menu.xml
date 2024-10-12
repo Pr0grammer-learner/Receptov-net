@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuActivity">
+
+    <!-- Верхний розовый блок -->
+    <View
+        android:id="@+id/top_pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/pinkColor" />
+
+    <!-- Заголовок меню -->
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_pink_block"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Menu"
+        android:textSize="48sp"
+        android:fontFamily="@font/jersey10"
+        android:textColor="@android:color/black" />
+
+    <!-- Содержимое меню -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_title"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/all_recipes_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="All recipes 📖"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:fontFamily="@font/jersey10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/favourite_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Favourite ❤️"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:fontFamily="@font/jersey10"
+            android:layout_marginTop="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_recipe_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Create recipe ✍️"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:fontFamily="@font/jersey10"
+            android:layout_marginTop="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/my_account_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="My account 👤"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:fontFamily="@font/jersey10"
+            android:layout_marginTop="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="BACK ⬅️"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:fontFamily="@font/jersey10"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- Нижний розовый блок -->
+    <View
+        android:id="@+id/bottom_pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pinkColor" />
+
+</RelativeLayout>

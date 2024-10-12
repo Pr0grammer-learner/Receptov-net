@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ProfileActivity">
+
+    <!-- Верхний розовый блок -->
+    <View
+        android:id="@+id/top_pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/pinkColor" />
+
+    <!-- Фото профиля под розовым блоком -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/top_pink_block"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile_placeholder"
+        android:contentDescription="Profile Image" />
+
+
+    <!-- Имя пользователя -->
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Username: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/jersey10" />
+
+    <!-- Email пользователя -->
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_text"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Email: "
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/jersey10" />
+
+    <!-- Избранные рецепты -->
+    <TextView
+        android:id="@+id/favorite_recipes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_text"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Favourite recipes: 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/jersey10" />
+
+    <!-- Кнопка изменения информации -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/change_info_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favorite_recipes_text"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="Change info"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/jersey10"
+        android:textSize="18sp" />
+
+    <!-- Кнопка выхода -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_info_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="Exit"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/jersey10"
+        android:textSize="18sp" />
+
+    <!-- Кнопка для перехода в меню (Вне розового блока, в углу экрана) -->
+
+    <!-- Нижний розовый блок -->
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="359dp"
+        android:layout_marginTop="-9dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Menu Button"
+        android:src="@drawable/ic_menu" />
+
+    <View
+        android:id="@+id/bottom_pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pinkColor" />
+
+</RelativeLayout>
